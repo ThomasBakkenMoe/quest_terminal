@@ -34,7 +34,7 @@ function App() {
       </header>
 
       <section>
-        {user ? <SignIn /> : <SignIn />}
+        {user ? <Terminal /> : <SignIn />}
       </section>
     </div>
   );
@@ -51,6 +51,12 @@ function SignIn() {
     <>
       <button className="sign-in" onClick={signInWithMail}>Sign in</button>
     </>
+  )
+}
+
+function Terminal(){
+  return(
+    <p>"WOW! That worked!"</p>
   )
 }
 export default App;
